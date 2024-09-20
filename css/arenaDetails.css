@@ -1,0 +1,62 @@
+.arena-container {
+    max-width: 800px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.info-section {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.info-section h2 {
+    color: #d8cb0c;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-2 {
+    font-weight: bold;
+    color: #555;
+}
+
+.col-10 {
+    color: #333;
+}
+
+
+
+
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.link-dark {
+    color: #000;
+}
+
+.link-dark:hover {
+    text-decoration: underline;
+}
+
+.btn-back {
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}

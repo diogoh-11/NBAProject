@@ -1,0 +1,213 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW - NBA Test App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/myCSS.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(201, 190, 190)">
+        <div class="container-fluid">
+            <a href="index.html" style="margin-right: 2%;"><img src="../Imagens/NBA.png" height="40" width="100" /></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%;">
+                    <li class="nav-item" style="margin-left: 98% ;">
+                        <a class="nav-link text-light" href="Favoritos.html">
+                            <c style="font-weight: bold;"></c><i class="fa fa-heart" style="display: flex;"><c style="font-weight: bold;"></c></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Working Area -->
+    <main class="background main1" style="min-height: 1000px; padding-top: 140px; ">
+        <div class="container" style="margin-left: 110px; ">
+            <div class="circle-container">
+                <div class="row justify-content-center">
+    
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <a class="btn" href="arenas.html">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/Arenas.png" alt="Arenas" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arenas</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <a class="btn" href="Players.html">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/Players.png" alt="Players" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Players</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <a class="btn" href="Teams.html">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/Teams.png" alt="Teams" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Teams</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="row mt-3 justify-content-center">
+    
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <a class="btn" href="States.html">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/States.png" alt="States" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">States</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="col-12 col-md-6 col-lg-4 mb-2">
+                        <a class="btn" href="Seasons.html">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/Seasons.png" alt="Seasons" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Seasons</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-2" onmouseover="showFAQCards()" onmouseout="hideFAQCards()">
+                        <a class="btn" href="#">
+                            <div class="card-block">
+                                <img src="../Imagens/Cards/Data.jpeg" alt="FAQs" class="card-img-top" height="160px">
+                                <div class="card-body">
+                                    <h5 class="card-title">Auxiliar Data</h5>
+                                </div>
+                            </div>
+                            <div class="additional-cards" id="faq-cards" style="display: none;margin-bottom: -300px; margin-left: -103px">
+                                <a class="btn" href="Conference.html">
+                                    <div class="additional-card">
+                                        <img src="../Imagens/Cards/Conferences.jpg" alt="FAQs">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Conferences</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="btn" href="Positions.html">
+                                    <div class="additional-card">
+                                        <img src="../Imagens/Cards/Positions.jpeg" alt="FAQs">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Positions</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="btn" href="SeasonsTypes.html">
+                                    <div class="additional-card">
+                                        <img src="../Imagens/Cards/SeasonsTypes.jpeg" alt="FAQs">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Seasons Types</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </a>
+                    </div>                           
+                </div>
+            </div>
+        </div>
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="z-index: 11; position: absolute; right: 8px;">
+            <div class="toast-body" style="color: green; text-align: center;">
+                Subscrito com sucesso!
+            </div>
+        </div>
+    </main>
+
+    <!-- End of Working Area -->
+    <nav>
+        <div class="footer">
+            <footer class="text-white" style="background-color: rgb(201, 190, 190)">
+                <div class="container p-2">
+                    <section class="text-center mb-4">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/nba/" role="button"><i class="fa fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nba/" role="button"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/nba" role="button"><i class="fa fa-twitter"></i></a>
+                    </section>
+                    <div class="row text-center" style="display: flex; justify-content: center;">
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="arenas.html">
+                                <h5 style="color:white;"><b><u>Arenas</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Players.html">
+                                <h5 style="color:white;"><b><u>Players</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Teams.html">
+                                <h5 style="color:white;"><b><u>Teams</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="States.html">
+                                <h5 style="color:white;"><b><u>States</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Seasons.html">
+                                <h5 style="color:white;"><b><u>Seasons</u></b></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </nav>
+  
+
+<!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+        var option = {
+            animation: true,
+            delay: 2000
+        };
+
+        function Toasty() {
+            var toast = document.getElementById("liveToast");
+            var toast1 = new bootstrap.Toast(toast, option);
+            toast1.show();
+            $('#sub').val(null);
+        };
+
+        function showFAQCards() {
+            document.querySelector('.additional-cards').style.display = 'block';
+        }
+
+        function hideFAQCards() {
+            document.querySelector('.additional-cards').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

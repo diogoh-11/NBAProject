@@ -1,0 +1,32 @@
+a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+b {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    transition: background 0.2s ease-out;
+    white-space: nowrap;
+}
+
+h5 {
+    position: relative;
+}
+
+b:hover {
+    background-position: 0 6px;
+}
+
+h5:hover:before {
+    transform: translateY(10px)
+}

@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+      "module": "es20215",
+      "target": "es20215",
+      "sourceMap": true
+    }
+   }

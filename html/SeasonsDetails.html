@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2023/24 - NBA Arena Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/myCSS.css" />
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:  rgb(201, 190, 190)">
+        <div class="container-fluid">
+            <a href="index.html" style="margin-right: 2%;"><img src="../Imagens/NBA.png" height="40" width="100" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%;">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white;" href="arenas.html">Arenas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white;" href="Players.html">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white;" href="Teams.html">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:white;" href="States.html">States</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active rounded-pill bg-light text-dark" style="color:white;" href="Seasons.html" ><img src="../Imagens/Seasons.png" height="30px"><c style="font-weight: bold;">Seasons</c></a> 
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+                            Auxiliar Data
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(201, 190, 190); border: none;">
+                            <a class="dropdown-item" href="Conference.html" style="color: rgb(4, 4, 4);">Conference</a>
+                            <a class="dropdown-item" href="Positions.html" style="color: rgb(4, 4, 4);">Positions</a>
+                            <a class="dropdown-item" href="SeasonsTypes.html" style="color: rgb(4, 4, 4);;">Seasons Types</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" style="margin-left:auto ;">
+                        <a class="nav-link" style="color:white;" href="Favoritos.html">
+                            <c style="font-weight: bold";></c><i class="fa fa-heart" ><c style="font-weight: bold;"></c></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Work Area-->
+    <main class="background" style="min-height: 737px;">
+        <div class="container">
+            <div class="py-2 border-bottom mb-3" style="text-align: center;">
+                <h2 data-bind="text: Id()"></h2>
+            </div>
+
+            <div class="row">
+                <!-- Card para as equipes -->
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row border-bottom g-2">
+                                <div class="col-12" style="text-align: Center; font-family: 'Arial', sans-serif; font-size: 24px;">Teams</div>
+                                
+                            </div>
+                            <div class="container" style="width: 100%; margin-top:10px">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-bind="foreach: Teams.slice(0, 24)">
+                                    <div class="col mb-4">
+                                        <div class="card" style="height: 150px; width: 150px; margin-right: 10px; margin-left: 10px;">
+                                            <a data-bind="attr: { href: './teamDetails.html?id=' + Id + '&acronym=' + Acronym }">
+                                                <img class="card-img-top mx-auto" data-bind="attr: { src: Logo, alt: Name }" style="object-fit: cover; height: 130px; width: 100%;" />
+                                            </a>
+                                            <div class="card-body">
+                                                <h6 class="card-title" data-bind="text: Name"></h6>
+                                                <!-- Adicione outras informações se necessário -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-bind="foreach: displayedTeams">
+                                    <div class="col mb-4">
+                                        <div class="card" style="height: 150px; width: 150px; margin-right: 10px; margin-left: 10px;">
+                                            <a data-bind="attr: { href: './teamDetails.html?id=' + Id + '&acronym=' + Acronym }">
+                                                <img class="card-img-top mx-auto" data-bind="attr: { src: Logo, alt: Name }" style="object-fit: cover; height: 130px; width: 100%;" />
+                                            </a>
+                                            <div class="card-body">
+                                                <h6 class="card-title" data-bind="text: Name"></h6>
+                                                <!-- Adicione outras informações se necessário -->
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button data-bind="click: loadMoreTeams" class="btn btn-primary" style="margin-bottom: 10px;">Load More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card para o Estado -->
+                <div class="col-lg-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row border-bottom g-2">
+                            <div class="col-12" style="text-align: center; font-family: 'Arial', sans-serif; font-size: 24px;">Jogadores</div>
+                            
+                        </div>
+                        <div class="container" style="width: 100%; margin-top:10px;">
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-bind="foreach: Players.slice(0, 24)">
+                                <div class="col mb-4">
+                                    <div class="card" style="height: 150px; width: 150px; margin-right: 10px; margin-left: 10px;">
+                                        <a data-bind="attr: { href: './PlayerDetails.html?id=' + Id}">
+                                            <img class="card-img-top mx-auto" data-bind="attr: { src: Photo, alt: Name }" style="object-fit: cover; height: 130px; width: 100%;" />
+                                        </a>
+                                        <div class="card-body">
+                                            <h6 class="card-title" data-bind="text: Name"></h6>
+                                            <!-- Adicione outras informações se necessário -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-bind="foreach: displayedPlayers">
+                                <div class="col mb-4">
+                                    <div class="card" style="height: 150px; width: 150px; margin-right: 10px; margin-left: 10px;">
+                                        <a data-bind="attr: { href: './PlayerDetails.html?id=' + Id}">
+                                            <img class="card-img-top mx-auto" data-bind="attr: { src: Photo, alt: Name }" style="object-fit: cover; height: 130px; width: 100%;" />
+                                        </a>
+                                        <div class="card-body">
+                                            <h6 class="card-title" data-bind="text: Name"></h6>
+                                            <!-- Adicione outras informações se necessário -->
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <button data-bind="click: loadMore" class="btn btn-primary" style="margin-bottom: 10px;">Load More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Back to List Button -->
+        <a href="Season.html" class="btn btn-default btn-sm small mt-3"><i class="fa fa-list"></i> Back to List</a>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <img src="https://th.bing.com/th/id/R.a59293ce0fde19e2b09f8ff3efa8e1ab?rik=2jzIvrxcuU5%2bvA&riu=http%3a%2f%2fwww.stickpng.com%2fassets%2fimages%2f58428defa6515b1e0ad75ab4.png&ehk=ltCnKNoDPGV0hObY3nJXCn9p9jufYXqgDwfZ6LbttCU%3d&risl=&pid=ImgRaw&r=0" height="30" /> Loading data...
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="https://media1.giphy.com/media/GGjE4LAJ2uzGiwdk55/giphy.gif?cid=ecf05e47cagspnu3sgjctew69xu7jufojrunse35hx4fmm3x&ep=v1_gifs_search&rid=giphy.gif&ct=g" style="width: 250px; height: 250px; border-radius: 50%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Work Area -->
+    <nav>
+        <div class="footer">
+            <footer class="text-white" style="background-color: rgb(201, 190, 190)">
+                <div class="container p-2">
+                    <section class="text-center mb-4">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/nba/" role="button"><i class="fa fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nba/" role="button"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/nba" role="button"><i class="fa fa-twitter"></i></a>
+                    </section>
+                    <div class="row text-center" style="display: flex; justify-content: center;">
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="arenas.html">
+                                <h5 style="color:white;"><b><u>Arenas</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Players.html">
+                                <h5 style="color:white;"><b><u>Players</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Teams.html">
+                                <h5 style="color:white;"><b><u>Teams</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="States.html">
+                                <h5 style="color:white;"><b><u>States</u></b></h5>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-12">
+                            <a class="nav-link" href="Seasons.html">
+                                <h5 style="color:white;"><b><u>Seasons</u></b></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.min.js"></script>
+    <script src="../js/SeasonDetails.js"></script>
+</body>
+</body>
+</html>
+
+
